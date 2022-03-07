@@ -10,6 +10,10 @@ p {
   line-height: 1.5rem;
 }
 
+small {
+  color: #ec5242;
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -123,10 +127,71 @@ hr {
 }
 
 #speakers {
-  padding: 30px 3%;
+  padding: 30px 3% 80px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
+}
+#speakers h2 {
+  text-align: center;
+}
+
+#authors {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.cardPicture {
+  padding-top: 20px;
+  flex-shrink: 0;
+  width: 33%;
+}
+.cardPicture img {
+  width: 100%;
+}
+
+#partner {
+  padding: 50px 3%;
+  background: #272a31;
+  color: #aaa;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partnerList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+#partnerList a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 25px 3% 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#footLogo {
+  width: 80px;
+}
+#footLogo img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ h2,
 h3 {
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: lighter;
+  margin-bottom: 0;
 }
 
 p {
@@ -91,4 +92,21 @@ h1 {
   line-height: 2rem;
   border: #fff solid 3px;
   background: $lightC;
+}
+
+#courses {
+  padding-top: 50px;
+  color: $lightC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkC;
+  background-image: url('../img/pattBg.png');
+  background-repeat: repeat;
+
+  hr {
+    border: none;
+    width: 30px;
+    border-top: solid $orangeC 1px;
+  }
 }

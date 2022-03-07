@@ -1,3 +1,82 @@
+// Variables
+$gray: #333;
+$lightTxt: #fff;
+$orangeC: #ec5242;
+$darkC: #272a31;
+$lightC: #d3d3d3;
+
 body {
-  background: #fff;
+  width: 100vw;
+  margin: 0;
+  background: #ddd;
+  font-family: 'Lato', sans-serif;
+  h1, h2, h3 {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-weight: lighter;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  * {
+    padding: 0 2%;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+#burger {
+  padding: 1rem;
+  span {
+    display: block;
+    margin:5px;
+    height: 6px;
+    width:30px;
+    background: $gray;
+    border-radius: 1px;
+  }
+}
+
+#main {
+  height: 100vh;
+  box-sizing: border-box;
+  padding-top: 80px;
+  background: $lightC;
+}
+h1 {
+	color: transparent;
+  -webkit-background-clip: text;
+	background-image: url('../img/mainTxt.jpg');
+
+  span {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+#landImg {
+  width: 80%;
+}
+
+#landLogo {
+  width: 100%;
+  -webkit-mask-image: url('../img/logo.png');
+  mask-image: url('../img/logo.png');
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.box {
+  margin: 30px 0;
+  font-weight: 500;
+  line-height: 2rem;
+  border: #ddd solid 3px;
+  background: $lightC;
 }

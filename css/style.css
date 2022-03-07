@@ -1,18 +1,23 @@
+h1,
+h2,
+h3 {
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
 body {
   width: 100vw;
   margin: 0;
   background: #ddd;
   font-family: "Lato", sans-serif;
-}
-body h1, body h2, body h3 {
-  font-family: "COCOGOOSE", sans-serif;
-  font-weight: lighter;
-}
-body p {
-  line-height: 1.5rem;
+  color: #272a31;
 }
 body * {
-  padding: 0 2%;
+  padding: 0 3%;
 }
 
 header {
@@ -35,17 +40,19 @@ header {
 #main {
   height: 100vh;
   box-sizing: border-box;
-  padding-top: 80px;
-  background: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  background-image: url("../img/mobileBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 h1 {
   color: transparent;
   -webkit-background-clip: text;
   background-image: url("../img/mainTxt.jpg");
-}
-h1 span {
-  font-family: "Lato", sans-serif;
 }
 
 #landImg {
@@ -56,8 +63,6 @@ h1 span {
   width: 100%;
   -webkit-mask-image: url("../img/logo.png");
   mask-image: url("../img/logo.png");
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -70,8 +75,8 @@ h1 span {
   margin: 30px 0;
   font-weight: 500;
   line-height: 2rem;
-  border: #ddd solid 3px;
-  background: #d3d3d3;
+  border: #fff solid 3px;
+  background: #f5f5f5;
 }
 
 /*# sourceMappingURL=style.css.map */

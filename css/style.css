@@ -17,9 +17,6 @@ body {
   font-family: "Lato", sans-serif;
   color: #272a31;
 }
-body * {
-  padding: 0 3%;
-}
 
 header {
   position: fixed;
@@ -36,10 +33,12 @@ header {
   width: 30px;
   background: #333;
   border-radius: 1px;
+  box-shadow: 0px 0px 2px #fff;
 }
 
 #main {
   height: 100vh;
+  padding: 0 3%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -74,14 +73,22 @@ h1 {
 
 .box {
   margin: 30px 0;
+  padding: 0 5%;
   font-weight: 500;
   line-height: 2rem;
   border: #fff solid 3px;
   background: #f5f5f5;
 }
 
+hr {
+  border: none;
+  width: 50px;
+  border-top: solid #ec5242 1px;
+  margin-bottom: 30px;
+}
+
 #courses {
-  padding-top: 50px;
+  padding: 50px 3% 30px;
   color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -89,11 +96,37 @@ h1 {
   background-color: #272a31;
   background-image: url("../img/pattBg.png");
   background-repeat: repeat;
+  gap: 10px;
 }
-#courses hr {
+
+.courseBox {
+  background: #c1c1c120;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: #f5f5f5;
+}
+.courseBox h3 {
+  color: #ec5242;
+}
+
+#join {
+  margin-top: 30px;
+  width: 75%;
+  background-color: #ec5242;
+  color: #f5f5f5;
   border: none;
-  width: 30px;
-  border-top: solid #ec5242 1px;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+#speakers {
+  padding: 30px 3%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

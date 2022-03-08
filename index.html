@@ -10,6 +10,7 @@
   </head>
   <body>
     <header>
+      <a id="navLogo" href="index.html"><img src="img/logo.png" alt="Creative courses logo"></a>
       <nav>
         <div id="burger">
           <span></span>
@@ -17,6 +18,23 @@
           <span></span>
         </div>
       </nav>
+      <ul id="navDesktop">
+        <li><a class="aboutLink" href="about.html">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a class="preview" href="#">Free Course</a></li>
+      </ul>
+      <ul id="navList">
+        <li id="closeMenu"> <img src="img/closeMenu.png" alt="close"> </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a class="preview" href="#">Free Course</a></li>
+      </ul>
     </header>
 
     <section id="main">
@@ -38,30 +56,32 @@
         <h2>Main Courses</h2>
         <hr>
       </div>
-      <div class="courseBox">
-        <img src="img/icoDummy.png" alt="Concept art icon">
-        <h3>Concept Art</h3>
-        <p>Learn the basics of 3D & how to create stunning artworks using Blender & Photoshop.</p>
-      </div>
-      <div class="courseBox">
-        <img src="img/icoDummy.png" alt="Cinematic music icon">
-        <h3>Cinematic Music</h3>
-        <p>Learn how to compose, orchestrate and produce cinematic tracks effortlessly.</p>
-      </div>
-      <div class="courseBox">
-        <img src="img/icoDummy.png" alt="Concept art icon">
-        <h3>Mixing Workshop</h3>
-        <p>An Introduction To The Workflow of an Orchestral Mixing Engineer.</p>
-      </div>
-      <div class="courseBox">
-        <img src="img/icoDummy.png" alt="Concept art icon">
-        <h3>Cinematic Design</h3>
-        <p>Start Generating Ideas, Designing and Painting Digital Artworks.</p>
-      </div>
-      <div class="courseBox">
-        <img src="img/icoDummy.png" alt="Concept art icon">
-        <h3>Sci-Fi Sound Design</h3>
-        <p>Learn how to make cinematic SFX like a pro! From zero to sci-fi sound design hero.</p>
+      <div id="courseList">
+        <div class="courseBox">
+          <img src="img/icoDummy.png" alt="Concept art icon">
+          <h3>Concept Art</h3>
+          <p>Learn the basics of 3D & how to create stunning artworks using Blender & Photoshop.</p>
+        </div>
+        <div class="courseBox">
+          <img src="img/icoDummy.png" alt="Cinematic music icon">
+          <h3>Cinematic Music</h3>
+          <p>Learn how to compose, orchestrate and produce cinematic tracks effortlessly.</p>
+        </div>
+        <div class="courseBox">
+          <img src="img/icoDummy.png" alt="Concept art icon">
+          <h3>Mixing Workshop</h3>
+          <p>An Introduction To The Workflow of an Orchestral Mixing Engineer.</p>
+        </div>
+        <div class="courseBox">
+          <img src="img/icoDummy.png" alt="Concept art icon">
+          <h3>Cinematic Design</h3>
+          <p>Start Generating Ideas, Designing and Painting Digital Artworks.</p>
+        </div>
+        <div class="courseBox">
+          <img src="img/icoDummy.png" alt="Concept art icon">
+          <h3>Sci-Fi Sound Design</h3>
+          <p>Learn how to make cinematic SFX like a pro! From zero to sci-fi sound design hero.</p>
+        </div>
       </div>
       <button id="join" type="button" name="joinCourses">Join Creative Courses</button>
     </section>

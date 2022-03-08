@@ -1,0 +1,15 @@
+$gray: #333;
+
+$lightC: #f5f5f5;
+
+$orangeC: #ec5242;
+
+$darkC: #272a31;
+
+$lightGray: #d3d3d3;
+
+@mixin desktop() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}

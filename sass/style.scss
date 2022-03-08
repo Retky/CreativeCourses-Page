@@ -200,6 +200,9 @@ hr {
 
 #authors {
   display: flex;
+  @include desktop() {
+    flex-wrap: wrap;
+  }
 }
 
 .card {
@@ -207,6 +210,10 @@ hr {
   display: flex;
   gap: 5px;
   font-size: 12px;
+
+  @include desktop() {
+    width: 50%;
+  }
 }
 
 .cardPicture {

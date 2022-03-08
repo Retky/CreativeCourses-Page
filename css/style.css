@@ -201,12 +201,22 @@ hr {
 #authors {
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  #authors {
+    flex-wrap: wrap;
+  }
+}
 
 .card {
   width: 100%;
   display: flex;
   gap: 5px;
   font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
 }
 
 .cardPicture {

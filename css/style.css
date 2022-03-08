@@ -120,7 +120,7 @@ header {
   }
 }
 
-#navList {
+.navList {
   position: fixed;
   margin: 0;
   top: 0;
@@ -132,12 +132,16 @@ header {
   list-style: none;
   line-height: 2.5rem;
 }
-#navList a {
+.navList a {
   color: #f5f5f5;
   text-decoration: none;
 }
-#navList li {
+.navList li {
   border-bottom: solid #555 1px;
+}
+
+.navShow {
+  left: 0%;
 }
 
 #closeMenu {

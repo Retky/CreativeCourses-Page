@@ -53,6 +53,19 @@ header {
   background-repeat: no-repeat;
 }
 
+#about {
+  min-height: 100vh;
+  padding: 50px 3% 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  background-image: url("../img/mobileBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 h1 {
   color: transparent;
   -webkit-background-clip: text;

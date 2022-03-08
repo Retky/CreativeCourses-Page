@@ -27,6 +27,13 @@ body {
 header {
   position: fixed;
   top: 0;
+
+  @include desktop() {
+    display: flex;
+    align-items: center;
+    background-color: $lightC;
+    height: 80px;
+  }
 }
 
 #burger {
@@ -45,6 +52,46 @@ header {
   @include desktop() {
     display: none;
   }
+}
+
+#navLogo {
+  display: none;
+
+  height: 80%;
+
+  img {
+    height: 80%;
+  }
+
+  @include desktop() {
+    display: block;
+  }
+}
+
+#navList {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+  background: #272a31ee;
+  padding: 15px;
+  list-style: none;
+  line-height: 2.5rem;
+
+  a {
+    color: $lightC;
+    text-decoration: none;
+  }
+
+  li {
+    border-bottom: solid #555 1px;
+  }
+}
+
+#closeMenu {
+  text-align: right;
 }
 
 #main {

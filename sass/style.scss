@@ -1,3 +1,213 @@
+// Variables
+
+$gray: #333;
+
+$lightC: #f5f5f5;
+
+$orangeC: #ec5242;
+
+$darkC: #272a31;
+
+$lightGray: #d3d3d3;
+
+h1,
+h2,
+h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+small {
+  color: $orangeC;
+}
+
 body {
-  background: #fff;
+  width: 100vw;
+  margin: 0;
+  background: #ddd;
+  font-family: 'Lato', sans-serif;
+  color: $darkC;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+#burger {
+  padding: 1rem;
+
+  span {
+    display: block;
+    margin: 5px;
+    height: 6px;
+    width: 30px;
+    background: $gray;
+    border-radius: 1px;
+    box-shadow: 0 0 2px #fff;
+  }
+}
+
+#main {
+  height: 100vh;
+  padding: 0 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $lightC;
+  background-image: url('../img/mobileBg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: url('../img/mainTxt.jpg');
+}
+
+#landImg {
+  width: 80%;
+}
+
+#landLogo {
+  width: 100%;
+  -webkit-mask-image: url('../img/logo.png');
+  mask-image: url('../img/logo.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.box {
+  margin: 30px 0;
+  padding: 0 5%;
+  font-weight: 500;
+  line-height: 2rem;
+  border: #fff solid 3px;
+  background: $lightC;
+}
+
+hr {
+  border: none;
+  width: 50px;
+  border-top: solid $orangeC 1px;
+  margin-bottom: 30px;
+}
+
+#courses {
+  padding: 50px 3% 30px;
+  color: $lightC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $darkC;
+  background-image: url('../img/pattBg.png');
+  background-repeat: repeat;
+  gap: 10px;
+}
+
+.courseBox {
+  background: #c1c1c120;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: $lightC;
+
+  h3 {
+    color: $orangeC;
+  }
+}
+
+#join {
+  margin-top: 30px;
+  width: 75%;
+  background-color: $orangeC;
+  color: $lightC;
+  border: none;
+  font-size: 18px;
+  padding: 2rem;
+}
+
+#speakers {
+  padding: 30px 3% 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+#authors {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.cardPicture {
+  padding-top: 20px;
+  flex-shrink: 0;
+  width: 33%;
+
+  img {
+    width: 100%;
+  }
+}
+
+#partner {
+  padding: 50px 3%;
+  background: $darkC;
+  color: #aaa;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partnerList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  padding: 25px 3% 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#footLogo {
+  width: 80px;
+
+  img {
+    width: 100%;
+  }
 }

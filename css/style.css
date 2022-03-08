@@ -107,17 +107,15 @@ header {
     display: flex;
   }
 }
-
-.aboutLink {
+#navDesktop .aboutLink {
   color: #ec5242;
 }
-
-.preview {
+#navDesktop .preview {
   padding: 5px;
   color: #ec5242;
 }
 @media screen and (min-width: 768px) {
-  .preview {
+  #navDesktop .preview {
     border: solid #ec5242 4px;
   }
 }

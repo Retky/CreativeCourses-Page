@@ -107,18 +107,18 @@ header {
   @include desktop() {
     display: flex;
   }
-}
 
-.aboutLink {
-  color: $orangeC;
-}
+  .aboutLink {
+    color: $orangeC;
+  }
 
-.preview {
-  padding: 5px;
-  color: $orangeC;
+  .preview {
+    padding: 5px;
+    color: $orangeC;
 
-  @include desktop() {
-    border: solid $orangeC 4px;
+    @include desktop() {
+      border: solid $orangeC 4px;
+    }
   }
 }
 

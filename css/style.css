@@ -41,7 +41,7 @@ header {
 }
 
 #main {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 3%;
   box-sizing: border-box;
   display: flex;
@@ -82,6 +82,20 @@ h1 {
   line-height: 2rem;
   border: #fff solid 3px;
   background: #f5f5f5;
+}
+
+.box2 {
+  margin: 30px 0;
+  padding: 0 5%;
+  font-weight: 500;
+  line-height: 2rem;
+  border: #eee solid 1px;
+  background: #fff;
+}
+
+#aboutTxt a {
+  color: #272a31;
+  font-weight: bold;
 }
 
 hr {
@@ -157,6 +171,48 @@ hr {
   width: 100%;
 }
 
+#past {
+  padding: 30px 3% 80px;
+}
+#past h2 {
+  text-align: center;
+}
+
+#pastCourse {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pastCourse {
+  width: 93vw;
+  height: 50vw;
+}
+
+.course1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/thumbnail1.jpg");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+}
+
+.course2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/thumbnail2.jpg");
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+}
+
 #partner {
   padding: 50px 3%;
   background: #272a31;
@@ -169,6 +225,7 @@ hr {
 
 #partnerList {
   padding: 0;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -177,6 +234,10 @@ hr {
 }
 #partnerList a {
   text-decoration: none;
+}
+#partnerList img {
+  filter: grayscale(100%);
+  width: 100%;
 }
 
 footer {

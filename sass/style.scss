@@ -93,6 +93,30 @@ header {
   }
 }
 
+.navList {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100%;
+  background: #272a31ee;
+  padding: 15px;
+  list-style: none;
+  line-height: 2.5rem;
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.69, 0.22, 0.24, 0.88);
+
+  a {
+    color: $lightC;
+    text-decoration: none;
+  }
+
+  li {
+    border-bottom: solid #555 1px;
+  }
+}
+
 #navDesktop {
   display: none;
   list-style: none;
@@ -122,26 +146,8 @@ header {
   }
 }
 
-#navList {
-  position: fixed;
-  margin: 0;
-  top: 0;
-  left: -100%;
-  width: 75%;
-  height: 100%;
-  background: #272a31ee;
-  padding: 15px;
-  list-style: none;
-  line-height: 2.5rem;
-
-  a {
-    color: $lightC;
-    text-decoration: none;
-  }
-
-  li {
-    border-bottom: solid #555 1px;
-  }
+.navShow {
+  left: 0%;
 }
 
 #closeMenu {

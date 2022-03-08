@@ -11,6 +11,11 @@
   background-image: url('../img/mobileBg.png');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include desktop() {
+    background-image: url('../img/mainBg.png');
+    align-items: center;
+  }
 }
 
 .box2 {
@@ -20,12 +25,17 @@
   line-height: 2rem;
   border: #eee solid 1px;
   background: #fff;
+
+  @include desktop() {
+    width: 80%;
+  }
 }
 
 #aboutLogo {
   padding: 30px 3% 80px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-bottom: solid #ccc 1px;
 
   p {
@@ -42,6 +52,10 @@
   img {
     padding: 25px;
     border: solid #ccc 1px;
+
+    @include desktop() {
+      width: 50%;
+    }
   }
 }
 
@@ -50,7 +64,7 @@
     color: $darkC;
     font-weight: bold;
   }
-  
+
 }
 
 #past {
@@ -65,11 +79,23 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+
+  @include desktop() {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .pastCourse {
   width: 93vw;
   height: 50vw;
+
+  @include desktop() {
+    width: 40vw;
+    height: 20vw;
+  }
 }
 
 .course1 {

@@ -10,6 +10,12 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  #about {
+    background-image: url("../img/mainBg.png");
+    align-items: center;
+  }
+}
 
 .box2 {
   margin: 30px 0;
@@ -19,11 +25,17 @@
   border: #eee solid 1px;
   background: #fff;
 }
+@media screen and (min-width: 768px) {
+  .box2 {
+    width: 80%;
+  }
+}
 
 #aboutLogo {
   padding: 30px 3% 80px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-bottom: solid #ccc 1px;
 }
 #aboutLogo p {
@@ -38,6 +50,11 @@
 #aboutLogo img {
   padding: 25px;
   border: solid #ccc 1px;
+}
+@media screen and (min-width: 768px) {
+  #aboutLogo img {
+    width: 50%;
+  }
 }
 
 #aboutTxt a {
@@ -57,10 +74,24 @@
   flex-direction: column;
   gap: 5px;
 }
+@media screen and (min-width: 768px) {
+  #pastCourse {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
 
 .pastCourse {
   width: 93vw;
   height: 50vw;
+}
+@media screen and (min-width: 768px) {
+  .pastCourse {
+    width: 40vw;
+    height: 20vw;
+  }
 }
 
 .course1 {

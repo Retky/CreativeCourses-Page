@@ -1,14 +1,4 @@
-// Variables
-
-$gray: #333;
-
-$lightC: #f5f5f5;
-
-$orangeC: #ec5242;
-
-$darkC: #272a31;
-
-$lightGray: #d3d3d3;
+@import 'vars.scss';
 
 h1,
 h2,
@@ -66,19 +56,6 @@ header {
   background-repeat: no-repeat;
 }
 
-#about {
-  min-height: 100vh;
-  padding: 50px 3% 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $lightC;
-  background-image: url('../img/mobileBg.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 h1 {
   color: transparent;
   -webkit-background-clip: text;
@@ -108,15 +85,6 @@ h1 {
   line-height: 2rem;
   border: #fff solid 3px;
   background: $lightC;
-}
-
-.box2 {
-  margin: 30px 0;
-  padding: 0 5%;
-  font-weight: 500;
-  line-height: 2rem;
-  border: #eee solid 1px;
-  background: #fff;
 }
 
 #aboutTxt {
@@ -202,72 +170,6 @@ hr {
   }
 }
 
-#aboutLogo {
-  padding: 30px 3% 80px;
-  display: flex;
-  flex-direction: column;
-  border-bottom: solid #ccc 1px;
-
-  p {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: bolder;
-  }
-
-  img {
-    padding: 25px;
-    border: solid #ccc 1px;
-  }
-}
-
-#past {
-  padding: 30px 3% 80px;
-
-  h2 {
-    text-align: center;
-  }
-}
-
-#pastCourse {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.pastCourse {
-  width: 93vw;
-  height: 50vw;
-}
-
-.course1 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/thumbnail1.jpg');
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $lightC;
-}
-
-.course2 {
-  width: 100%;
-  height: 100%;
-  background-image: url('../img/thumbnail2.jpg');
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $lightC;
-}
-
 #partner {
   padding: 50px 3%;
   background: $darkC;
@@ -312,3 +214,5 @@ footer {
     width: 100%;
   }
 }
+
+@import "about";

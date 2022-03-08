@@ -53,19 +53,6 @@ header {
   background-repeat: no-repeat;
 }
 
-#about {
-  min-height: 100vh;
-  padding: 50px 3% 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f5f5f5;
-  background-image: url("../img/mobileBg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 h1 {
   color: transparent;
   -webkit-background-clip: text;
@@ -95,15 +82,6 @@ h1 {
   line-height: 2rem;
   border: #fff solid 3px;
   background: #f5f5f5;
-}
-
-.box2 {
-  margin: 30px 0;
-  padding: 0 5%;
-  font-weight: 500;
-  line-height: 2rem;
-  border: #eee solid 1px;
-  background: #fff;
 }
 
 #aboutTxt a {
@@ -184,6 +162,70 @@ hr {
   width: 100%;
 }
 
+#partner {
+  padding: 50px 3%;
+  background: #272a31;
+  color: #aaa;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#partnerList {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+#partnerList a {
+  text-decoration: none;
+}
+#partnerList img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+footer {
+  padding: 25px 3% 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#footLogo {
+  width: 80px;
+}
+#footLogo img {
+  width: 100%;
+}
+
+#about {
+  min-height: 100vh;
+  padding: 50px 3% 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+  background-image: url("../img/mobileBg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.box2 {
+  margin: 30px 0;
+  padding: 0 5%;
+  font-weight: 500;
+  line-height: 2rem;
+  border: #eee solid 1px;
+  background: #fff;
+}
+
 #aboutLogo {
   padding: 30px 3% 80px;
   display: flex;
@@ -244,48 +286,6 @@ hr {
   justify-content: center;
   align-items: center;
   color: #f5f5f5;
-}
-
-#partner {
-  padding: 50px 3%;
-  background: #272a31;
-  color: #aaa;
-  font-weight: lighter;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#partnerList {
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-#partnerList a {
-  text-decoration: none;
-}
-#partnerList img {
-  filter: grayscale(100%);
-  width: 100%;
-}
-
-footer {
-  padding: 25px 3% 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-#footLogo {
-  width: 80px;
-}
-#footLogo img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -247,6 +247,11 @@ hr {
   align-items: center;
   gap: 25px;
 }
+@media screen and (min-width: 768px) {
+  #partnerList {
+    flex-direction: row;
+  }
+}
 #partnerList a {
   text-decoration: none;
 }

@@ -245,6 +245,10 @@ hr {
   align-items: center;
   gap: 25px;
 
+  @include desktop() {
+    flex-direction: row;
+  }
+
   a {
     text-decoration: none;
   }

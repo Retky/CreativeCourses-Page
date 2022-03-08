@@ -8,7 +8,7 @@ $darkC: #272a31;
 
 $lightGray: #d3d3d3;
 
-@mixin desktop(){
+@mixin desktop() {
   @media screen and (min-width: 768px) {
     @content;
   }

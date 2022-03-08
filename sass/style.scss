@@ -189,6 +189,29 @@ hr {
   }
 }
 
+#aboutLogo {
+  padding: 30px 3% 80px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid #ccc 1px;
+
+  p {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+  }
+
+  img {
+    padding: 25px;
+    border: solid #ccc 1px;
+  }
+}
+
 #past {
   padding: 30px 3% 80px;
 

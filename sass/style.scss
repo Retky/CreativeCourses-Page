@@ -41,6 +41,10 @@ header {
     border-radius: 1px;
     box-shadow: 0 0 2px #fff;
   }
+
+  @include desktop() {
+    display: none;
+  }
 }
 
 #main {
@@ -54,6 +58,10 @@ header {
   background-image: url('../img/mobileBg.png');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include desktop() {
+    background-image: url('../img/mainBg.png');
+  }
 }
 
 h1 {
@@ -63,7 +71,11 @@ h1 {
 }
 
 #landImg {
-  width: 80%;
+  width: 90%;
+
+  @include desktop() {
+    width: 60%;
+  }
 }
 
 #landLogo {
@@ -76,6 +88,7 @@ h1 {
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
+
 }
 
 .box {
@@ -85,12 +98,15 @@ h1 {
   line-height: 2rem;
   border: #fff solid 3px;
   background: $lightC;
+
+  @include desktop() {
+    width: 60%;
+  }
 }
 
-#aboutTxt {
-  a {
-    color: $darkC;
-    font-weight: bold;
+#mainTxt {
+  @include desktop() {
+    width: 70%;
   }
 }
 

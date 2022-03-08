@@ -39,6 +39,11 @@ header {
   border-radius: 1px;
   box-shadow: 0 0 2px #fff;
 }
+@media screen and (min-width: 768px) {
+  #burger {
+    display: none;
+  }
+}
 
 #main {
   min-height: 100vh;
@@ -52,6 +57,11 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  #main {
+    background-image: url("../img/mainBg.png");
+  }
+}
 
 h1 {
   color: transparent;
@@ -60,7 +70,12 @@ h1 {
 }
 
 #landImg {
-  width: 80%;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  #landImg {
+    width: 60%;
+  }
 }
 
 #landLogo {
@@ -83,10 +98,16 @@ h1 {
   border: #fff solid 3px;
   background: #f5f5f5;
 }
+@media screen and (min-width: 768px) {
+  .box {
+    width: 60%;
+  }
+}
 
-#aboutTxt a {
-  color: #272a31;
-  font-weight: bold;
+@media screen and (min-width: 768px) {
+  #mainTxt {
+    width: 70%;
+  }
 }
 
 hr {
@@ -279,6 +300,11 @@ footer {
 #aboutLogo img {
   padding: 25px;
   border: solid #ccc 1px;
+}
+
+#aboutTxt a {
+  color: #272a31;
+  font-weight: bold;
 }
 
 #past {

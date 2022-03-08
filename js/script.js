@@ -6,8 +6,8 @@ function showHideMenu() {
 }
 
 burger.addEventListener('click', () => {
-  showHideMenu()
+  showHideMenu();
 });
 navList.addEventListener('click', () => {
-  showHideMenu()
+  showHideMenu();
 });

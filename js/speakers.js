@@ -1,11 +1,22 @@
 const speakCont = document.getElementById('authors');
 
-const speakAuthor = {
-  name: 'Eben Schumacher',
-  img: 'img/cardPicDummy.jpg',
-  title: 'Artist & Musician Designer',
-  resume: 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.'
-};
+class speaker {
+  constructor(name, imgUrl, title, resume) {
+    this.name = name;
+    this.img = imgUrl;
+    this.title = title;
+    this.resume = resume;
+  }
+}
+
+const author1 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+const author2 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+const author3 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+const author4 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+const author5 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+const author6 = new speaker('Eben Schumacher', 'img/cardPicDummy.jpg', 'Artist & Musician Designer', 'After spending most of my childhood and adolescence drawing and painting, I eventually acquired a degree in Art and Philosophy, and shortly after began my career as a freelance artist.');
+
+const authorsList = [author1, author2, author3, author4, author5, author6];
 
 function addSpeaker(name) {
   const card = document.createElement('div');
@@ -32,4 +43,6 @@ function addSpeaker(name) {
   speakCont.appendChild(card)
 }
 
-addSpeaker(speakAuthor)
+authorsList.forEach((author) => {
+ addSpeaker(author)
+});

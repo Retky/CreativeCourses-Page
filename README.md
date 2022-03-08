@@ -1,6 +1,7 @@
 # CreativeCoursesPage
 
-> This project is a basic build for an online creative courses webpage.
+> This project is an example build for an online creative courses webpage.
+> (All information used in this website is for sample only.)
 
 ## Live Preview
 *Coming soon...*
@@ -58,6 +59,9 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07 "Cindy Shin Behance").
+- Topics idea & images in [Evenant](https://evenant.com)
+
+\**All information used in this website is for sample only. This does not pretend take any credits of the information and images used.*\*
 
 ## 📝 License
 

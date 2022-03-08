@@ -23,7 +23,7 @@ small {
   font-size: 12px;
 
   @include desktop() {
-    width: 50%;
+    width: 48%;
   }
 }
 
@@ -57,7 +57,7 @@ header {
     align-items: center;
     background-color: $lightC;
     height: 80px;
-    padding: 0 8%;
+    padding: 0 10%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   }
 }
@@ -167,6 +167,7 @@ header {
   background-repeat: no-repeat;
 
   @include desktop() {
+    padding: 0 10%;
     background-image: url('../img/mainBg.png');
   }
 }
@@ -232,6 +233,10 @@ hr {
   background-color: $darkC;
   background-image: url('../img/pattBg.png');
   background-repeat: repeat;
+
+  @include desktop() {
+    padding: 50px 10% 30px;
+  }
 }
 
 #courseList {
@@ -243,7 +248,7 @@ hr {
 
   @include desktop() {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -302,13 +307,21 @@ hr {
   h2 {
     text-align: center;
   }
+
+  @include desktop() {
+    padding: 30px 10% 80px;
+  }
 }
 
 #authors {
   display: flex;
+  flex-direction: column;
 
   @include desktop() {
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
   }
 }
 
@@ -320,6 +333,10 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include desktop() {
+    padding: 50px 10%;
+  }
 }
 
 #partnerList {
@@ -350,6 +367,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#copyright {
+  color: inherit;
+  text-decoration: none;
 }
 
 #footLogo {

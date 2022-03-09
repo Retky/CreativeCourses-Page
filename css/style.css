@@ -36,7 +36,8 @@ small {
 }
 
 body {
-  width: 100vw;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   background: #ddd;
   font-family: "Lato", sans-serif;
@@ -134,6 +135,7 @@ header {
 }
 #navDesktop .preview {
   padding: 5px;
+  display: inline-block;
   color: #ec5242;
 }
 @media screen and (min-width: 768px) {
@@ -170,9 +172,7 @@ header {
 }
 
 h1 {
-  color: transparent;
-  -webkit-background-clip: text;
-  background-image: url("../img/mainTxt.jpg");
+  color: #ec5242;
 }
 
 #landImg {
@@ -186,14 +186,6 @@ h1 {
 
 #landLogo {
   width: 100%;
-  -webkit-mask-image: url("../img/logo.png");
-  mask-image: url("../img/logo.png");
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
 }
 
 .box {
@@ -257,7 +249,7 @@ hr {
   background: #c1c1c120;
   box-sizing: border-box;
   width: 100%;
-  padding: 5px 15px;
+  padding: 5px 1px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -360,7 +352,6 @@ hr {
   text-decoration: none;
 }
 #partnerList img {
-  filter: grayscale(100%);
   width: 100%;
 }
 

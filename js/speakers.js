@@ -54,12 +54,12 @@ showMore.innerHTML = 'MORE';
 
 showMore.addEventListener('click', () => {
   if (authCre[2].style.display === 'none') {
-    for (let i = 2; i < authCre.length; i++) {
+    for (let i = 2; i < authCre.length; i += 1) {
       authCre[i].style.display = '';
     }
     showMore.innerHTML = 'LESS';
   } else if (authCre[2].style.display === '') {
-    for (let i = 2; i < authCre.length; i++) {
+    for (let i = 2; i < authCre.length; i += 1) {
       authCre[i].style.display = 'none';
     }
     showMore.innerHTML = 'MORE';
@@ -67,24 +67,24 @@ showMore.addEventListener('click', () => {
 });
 
 function speakShow() {
-  if (screen.width <= 768 ) {
-    for (let i = 2; i < authCre.length; i++) {
+  if (window.screen.width <= 768) {
+    for (let i = 2; i < authCre.length; i += 1) {
       authCre[i].style.display = 'none';
     }
     speakCont.appendChild(showMore);
-  } else if (screen.width > 768 && authCre[2].style.display === 'none') {
-    for (let i = 2; i < authCre.length; i++) {
+  } else if (window.screen.width > 768 && authCre[2].style.display === 'none') {
+    for (let i = 2; i < authCre.length; i += 1) {
       authCre[i].style.display = '';
     }
     speakCont.removeChild(showMore);
-  } else if (screen.width > 768 && speakCont.contains(showMore)) {
+  } else if (window.screen.width > 768 && speakCont.contains(showMore)) {
     showMore.innerHTML = 'MORE';
     speakCont.removeChild(showMore);
   }
 }
 
-speakShow()
+speakShow();
 
 window.addEventListener('resize', () => {
-  speakShow()
+  speakShow();
 });

@@ -28,6 +28,18 @@
   background: #fff;
 }
 
+.aboutfoot {
+  background: $darkC;
+
+  p {
+    color: $lightC;
+  }
+
+  img {
+    filter: invert(100%);
+  }
+}
+
 #aboutLogo {
   padding: 30px 3% 80px;
   display: flex;

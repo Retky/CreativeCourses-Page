@@ -4,8 +4,10 @@
 > (All information used in this website is for sample only.)
 
 ## Live Preview
-[Preview](https://retky.github.io/CreativeCourses-Page/ "Click to see the live preview")
+[Live Preview](https://retky.github.io/CreativeCourses-Page/ "Click to see the live preview")
+
 ![Mobile](./img/previewMobile.gif)
+
 ![Desktop](./img/previewDesk.gif)
 
 ## Built With

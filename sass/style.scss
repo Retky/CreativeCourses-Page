@@ -57,24 +57,6 @@ header {
   width: 100%;
 }
 
-#darkBar {
-  background: $darkC;
-  margin: 0;
-  display: none;
-  justify-content: flex-end;
-  padding: 5px 10%;
-  gap: 30px;
-
-  a {
-    color: $lightC;
-    text-decoration: none;
-  }
-
-  @include desktop() {
-    display: flex;
-  }
-}
-
 #navbar {
   @include desktop() {
     box-sizing: border-box;
@@ -143,6 +125,24 @@ header {
   }
 }
 
+#darkBar {
+  background: $darkC;
+  margin: 0;
+  display: none;
+  justify-content: flex-end;
+  padding: 5px 10%;
+  gap: 30px;
+
+  a {
+    color: $lightC;
+    text-decoration: none;
+  }
+
+  @include desktop() {
+    display: flex;
+  }
+}
+
 #navDesktop {
   display: none;
   list-style: none;
@@ -206,7 +206,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  span {
+  .little {
     font-family: 'Lato', sans-serif;
     line-height: 15rem;
   }

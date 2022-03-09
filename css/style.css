@@ -170,13 +170,26 @@ header {
 }
 @media screen and (min-width: 768px) {
   #main {
-    padding: 50px 10% 0;
+    padding: 0 10%;
     background-image: url("../img/mainBg.png");
   }
 }
 
 h1 {
   color: #ec5242;
+  font-size: 50px;
+  background: -webkit-linear-gradient(top right, #ec5242, #eca342, #ec5242);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 span {
+  font-family: "Lato", sans-serif;
+  line-height: 15rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 #landImg {

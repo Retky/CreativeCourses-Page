@@ -174,13 +174,26 @@ header {
   background-repeat: no-repeat;
 
   @include desktop() {
-    padding: 50px 10% 0;
+    padding: 0 10%;
     background-image: url('../img/mainBg.png');
   }
 }
 
 h1 {
   color: $orangeC;
+  font-size: 50px;
+  background: -webkit-linear-gradient(top right, $orangeC, #eca342, $orangeC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  span {
+    font-family: 'Lato', sans-serif;
+    line-height: 15rem;
+  }
+
+  @include desktop() {
+    font-size: 60px;
+  }
 }
 
 #landImg {

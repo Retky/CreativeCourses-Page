@@ -46,3 +46,45 @@ function addSpeaker(name) {
 authorsList.forEach((author) => {
   addSpeaker(author);
 });
+
+const authCre = document.querySelectorAll('.card');
+const showMore = document.createElement('button');
+showMore.classList.add('showBtn');
+showMore.innerHTML = 'MORE';
+
+showMore.addEventListener('click', () => {
+  if (authCre[2].style.display === 'none') {
+    for (let i = 2; i < authCre.length; i += 1) {
+      authCre[i].style.display = '';
+    }
+    showMore.innerHTML = 'LESS';
+  } else if (authCre[2].style.display === '') {
+    for (let i = 2; i < authCre.length; i += 1) {
+      authCre[i].style.display = 'none';
+    }
+    showMore.innerHTML = 'MORE';
+  }
+});
+
+function speakShow() {
+  if (window.screen.width <= 768) {
+    for (let i = 2; i < authCre.length; i += 1) {
+      authCre[i].style.display = 'none';
+    }
+    speakCont.appendChild(showMore);
+  } else if (window.screen.width > 768 && authCre[2].style.display === 'none') {
+    for (let i = 2; i < authCre.length; i += 1) {
+      authCre[i].style.display = '';
+    }
+    speakCont.removeChild(showMore);
+  } else if (window.screen.width > 768 && speakCont.contains(showMore)) {
+    showMore.innerHTML = 'MORE';
+    speakCont.removeChild(showMore);
+  }
+}
+
+speakShow();
+
+window.addEventListener('resize', () => {
+  speakShow();
+});

@@ -381,4 +381,12 @@ footer {
   width: 100%;
 }
 
+.showBtn {
+  margin: 0 20%;
+  padding: 10px;
+  background: #ddd;
+  border: #aaa solid 1px;
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */

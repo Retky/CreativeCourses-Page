@@ -49,11 +49,42 @@ authorsList.forEach((author) => {
 
 const authCre = document.querySelectorAll('.card');
 const showMore = document.createElement('button');
-showMore.innerHTML = 'Show More';
+showMore.classList.add('showBtn');
+showMore.innerHTML = 'MORE';
 
-if (screen.width <= 768 ) {
-  for (let i = 2; i < authCre.length; i++) {
-    authCre[i].style.display = 'none';
-  };
-  speakCont.appendChild(showMore);
-};
+showMore.addEventListener('click', () => {
+  if (authCre[2].style.display === 'none') {
+    for (let i = 2; i < authCre.length; i++) {
+      authCre[i].style.display = '';
+    }
+    showMore.innerHTML = 'LESS';
+  } else if (authCre[2].style.display === '') {
+    for (let i = 2; i < authCre.length; i++) {
+      authCre[i].style.display = 'none';
+    }
+    showMore.innerHTML = 'MORE';
+  }
+});
+
+function speakShow() {
+  if (screen.width <= 768 ) {
+    for (let i = 2; i < authCre.length; i++) {
+      authCre[i].style.display = 'none';
+    }
+    speakCont.appendChild(showMore);
+  } else if (screen.width > 768 && authCre[2].style.display === 'none') {
+    for (let i = 2; i < authCre.length; i++) {
+      authCre[i].style.display = '';
+    }
+    speakCont.removeChild(showMore);
+  } else if (screen.width > 768 && speakCont.contains(showMore)) {
+    showMore.innerHTML = 'MORE';
+    speakCont.removeChild(showMore);
+  }
+}
+
+speakShow()
+
+window.addEventListener('resize', () => {
+  speakShow()
+});

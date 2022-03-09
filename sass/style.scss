@@ -22,6 +22,11 @@ small {
   gap: 5px;
   font-size: 12px;
 
+  &:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
   @include desktop() {
     width: 48%;
   }
@@ -158,8 +163,8 @@ header {
 
 #main {
   min-height: 100vh;
-  padding: 0 3%;
   box-sizing: border-box;
+  padding: 0 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +174,7 @@ header {
   background-repeat: no-repeat;
 
   @include desktop() {
-    padding: 0 10%;
+    padding: 50px 10% 0;
     background-image: url('../img/mainBg.png');
   }
 }
@@ -254,6 +259,10 @@ hr {
   gap: 0.5rem;
   text-align: center;
   color: $lightC;
+
+  &:hover {
+    border: solid $lightC 1px;
+  }
 
   h3 {
     color: $orangeC;

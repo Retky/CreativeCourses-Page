@@ -46,3 +46,14 @@ function addSpeaker(name) {
 authorsList.forEach((author) => {
   addSpeaker(author);
 });
+
+const authCre = document.querySelectorAll('.card');
+const showMore = document.createElement('button');
+showMore.innerHTML = 'Show More';
+
+if (screen.width <= 768 ) {
+  for (let i = 2; i < authCre.length; i++) {
+    authCre[i].style.display = 'none';
+  };
+  speakCont.appendChild(showMore);
+};

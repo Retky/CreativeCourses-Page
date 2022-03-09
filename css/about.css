@@ -27,6 +27,16 @@
   background: #fff;
 }
 
+.aboutfoot {
+  background: #272a31;
+}
+.aboutfoot p {
+  color: #f5f5f5;
+}
+.aboutfoot img {
+  filter: invert(100%);
+}
+
 #aboutLogo {
   padding: 30px 3% 80px;
   display: flex;

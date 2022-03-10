@@ -60,10 +60,11 @@
 
   img {
     padding: 25px;
+    margin: 0 28px;
     border: solid #ccc 1px;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       transition: 0.2s;
     }
 
@@ -123,7 +124,7 @@
   color: $lightC;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.2s;
   }
 }
@@ -140,7 +141,7 @@
   color: $lightC;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.2s;
   }
 }

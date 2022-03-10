@@ -55,10 +55,11 @@
 }
 #aboutLogo img {
   padding: 25px;
+  margin: 0 28px;
   border: solid #ccc 1px;
 }
 #aboutLogo img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 @media screen and (min-width: 768px) {
@@ -116,7 +117,7 @@
   color: #f5f5f5;
 }
 .course1:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 
@@ -132,7 +133,7 @@
   color: #f5f5f5;
 }
 .course2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.2s;
 }
 

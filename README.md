@@ -1,7 +1,6 @@
 # CreativeCoursesPage
 
-> This project is an example build for an online creative courses webpage.
-> (All information used in this website is for sample only.)
+> This project is an example build for an online creative courses webpage. (All information used in this website is for sample only.)
 
 ## Live Preview
 [Live Preview](https://retky.github.io/CreativeCourses-Page/ "Click to see the live preview")
